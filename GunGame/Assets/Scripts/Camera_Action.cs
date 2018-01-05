@@ -16,13 +16,13 @@ public class Camera_Action : MonoBehaviour {
 
 	void Start ()
     {
-		
-	}
+      
+    }
 	
 	void Update ()
     {
-		
-	}
+   
+    }
 
     void LateUpdate()
     {

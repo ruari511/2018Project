@@ -25,10 +25,13 @@ public class PlayerMove : MonoBehaviour
 
     public Text hp_Text = null;
 
+    public GameManager gm;
+
     void Awake()
     {
         rig = GetComponent<Rigidbody>();
         ani = gameObject.GetComponent<Animator>();
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
 
         hpStart = hpMax;
         StartCoroutine(HPHeal());
@@ -71,6 +74,11 @@ public class PlayerMove : MonoBehaviour
             ani.SetBool("isMoving", true);
         }
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            gm.ChangeCamera();
+        }
+
 
         hp_Text.text = "HP : " + hpStart;
 
@@ -81,7 +89,6 @@ public class PlayerMove : MonoBehaviour
         if (!DontMove)
         {
             Run();
-            Turn();
             Die();
         }
 
@@ -108,9 +115,12 @@ public class PlayerMove : MonoBehaviour
         movement = movement.normalized * spd * Time.deltaTime;
 
         rig.MovePosition(transform.position + movement);
+
+        Turn();
+
     }
 
- 
+
     void Turn()
     {
         if (horizontalMove == 0 && verticalMove == 0)
