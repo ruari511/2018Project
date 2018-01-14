@@ -18,6 +18,11 @@ public class GameManager : MonoBehaviour
         ShotCamera.Priority = 0;
 
         camera_N = 0;
+
+        // 화면 흔들림 설정
+        //startCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 5f;
+        //startCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = 5f;
+
     }
 
     void Update()
@@ -42,6 +47,7 @@ public class GameManager : MonoBehaviour
 
             startCamera.Priority = 11;
             ShotCamera.Priority = 0;
+
         }
     }
 }

@@ -131,6 +131,7 @@
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineMixer.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineShot.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineTrack.cs" />
+    <Compile Include="Assets\Scripts\BossState.cs" />
     <Compile Include="Assets\Scripts\Camera_Action.cs" />
     <Compile Include="Assets\Scripts\EnemyState.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
