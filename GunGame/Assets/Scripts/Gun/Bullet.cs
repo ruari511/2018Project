@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour {
 
 	Rigidbody rigid;
 	public float speed = 1000f;
+	public float power = 0;
 	// Use this for initialization
 	void Start () {
 		rigid = GetComponent<Rigidbody>();
