@@ -10,6 +10,7 @@ public class PlayerMove : MonoBehaviour
     public float hpHealSec; // 초당 캐릭터 체력 회복력
     public float def; // 캐릭터 방어력
     public float spd; // 캐릭터 스피드
+    public float hpHealingMax; // 캐릭터 자동회복 체력
 
     public float rotateSpeed;
 
@@ -41,11 +42,21 @@ public class PlayerMove : MonoBehaviour
     {
         if (!DontMove)
         {
-            if (hpStart < hpMax)
+            if (hpStart < hpHealingMax)
             {
-                if(hpStart != 0)
+                if (hpStart != 0)
                 {
-                    hpStart += hpHealSec;
+                    float nexthp = hpStart + hpHealSec;
+
+                    if (nexthp >= hpHealingMax)
+                    {
+                        hpStart = hpHealingMax;
+                    }
+                    else
+                    {
+                        hpStart += hpHealSec;
+                    }
+
                 }
                 if (hpStart > hpMax)
                 {

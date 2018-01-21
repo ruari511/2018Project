@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b6c8cf1b7cead40820f8f60bb2e3e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 150
+  damage: 50
 --- !u!23 &263331523
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -823,10 +823,11 @@ MonoBehaviour:
   hpHealSec: 15
   def: 5
   spd: 8
+  hpHealingMax: 150
   rotateSpeed: 8
   DontMove: 0
   hp_Text: {fileID: 1141410483}
-  gm: {fileID: 0}
+  gm: {fileID: 1710363135}
 --- !u!136 &951879817
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1099,7 +1100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b6c8cf1b7cead40820f8f60bb2e3e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 150
+  damage: 50
 --- !u!23 &1275942979
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1194,7 +1195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b6c8cf1b7cead40820f8f60bb2e3e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 150
+  damage: 50
 --- !u!23 &1326346566
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1289,7 +1290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b6c8cf1b7cead40820f8f60bb2e3e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 150
+  damage: 50
 --- !u!23 &1335828294
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1439,7 +1440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b6c8cf1b7cead40820f8f60bb2e3e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 150
+  damage: 50
 --- !u!23 &1612386676
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1577,7 +1578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b6c8cf1b7cead40820f8f60bb2e3e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 150
+  damage: 50
 --- !u!23 &1745161488
 MeshRenderer:
   m_ObjectHideFlags: 0
